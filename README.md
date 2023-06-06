@@ -11,7 +11,13 @@ Step one was building the dataframe from json objects retrieved using python req
 The dataframe that was resulted was cleaned up on export from an sqlite database for fitting in a regression model. The model was done with a linear regression on the empty bike availability.
 ## Results
 The yelp had much better results than the foursquare. City bikes was the easiest API to work with as it did not require an access token. Latitude is a better predictor than longitude for empty bikes in paris.
+#Based on the given model output, the variable latitude is a good predictor of the number of free 
+bikes available, 
 
+MODEL SUMMARY:
+#while longitude does not appear to be a significant predictor. However, the overall predictive power of the model, 
+#as indicated by the low R-squared value (0.045),suggests limited ability of these variables to explain the variability in the number of free bikes.
+#Latitude affects free bikes significantly, while longitude's effect is inconclusive.
 ## Challenges 
 My biggest challenge was building the regression model. i am familiar with the dat operations but the model building was something i havent done before throuroughly. 
 
